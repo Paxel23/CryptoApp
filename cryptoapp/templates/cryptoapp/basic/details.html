@@ -1,0 +1,13 @@
+{% extends 'cryptoapp/base.html' %}
+
+{% block action %}
+    {{ action }}
+{% endblock action%}
+
+{% block content %}
+    {% if basic %}
+        <h3>{{ basic.name }}</h3>
+        
+        <p>{{ basic.description }}</p>
+    {% endif %}
+{% endblock content %}
