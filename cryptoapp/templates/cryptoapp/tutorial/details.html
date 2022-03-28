@@ -8,6 +8,8 @@
     {% if tutorial %}
         <h3>{{ tutorial.name }}</h3>
         <p>{{ tutorial.content }}</p>
-        
+        <p>
+            <a href="{% url 'tutorial' %}"> Powrót do poradników</a>
+        </p>
     {% endif %}
 {% endblock content %}

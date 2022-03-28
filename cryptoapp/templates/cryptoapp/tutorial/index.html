@@ -24,7 +24,9 @@
                 {% endfor %}
             </tbody>
         </table>
-        
+        <p>
+            <a href="{% url 'index' %}"> Powrót do strony głównej</a>
+        </p>
     {% else %}
         <p>Nie dodano żadnego tutoriala</p>
     {% endif %}

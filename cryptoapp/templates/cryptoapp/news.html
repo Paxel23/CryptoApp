@@ -7,7 +7,9 @@ CryptoStart
 
 {% block content %}
 
-
+<p>
+    <a href="{% url 'index' %}"> Powrót do strony głównej</a>
+</p>
 <div class = "container" >
     <div class = "row">
         {% for x in api.Data %}
@@ -29,7 +31,7 @@ CryptoStart
 
 
 
-{{api.Data}}
+
 
 
 {% endblock content %}
