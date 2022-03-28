@@ -9,5 +9,8 @@
         <h3>{{ basic.name }}</h3>
         
         <p>{{ basic.description }}</p>
+        <p>
+            <a href="{% url 'basic' %}"> Powrót</a>
+        </p>
     {% endif %}
 {% endblock content %}
