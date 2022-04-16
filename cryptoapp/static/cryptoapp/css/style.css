@@ -5,19 +5,19 @@ html {
     background-color:rgba(255, 89, 0, 0.945)(114, 40, 40);
     font-family: 'Arial', Sans-serif;
     font-size: 18px;   
-     
-  }
+
+      }
   body {  
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(255, 255, 255, 0.774);
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    width: 600px;
+    width: 800px;
     text-align: center;
     padding: 15px 15px 15px 15px;
     margin: auto auto;
     
-}
+    }
  
   h1{
     font-size: 39px;
@@ -36,8 +36,13 @@ html {
       border: 1px solid black;
       background-color: rgb(134, 220, 226);
       margin: 10px;
-     
+      align-items: auto;
+      align-self:auto;
+      text-align: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
+    
   a:link{
       color:rgb(16, 4, 48)
       }
@@ -106,7 +111,7 @@ html {
     .button-19:disabled {
       cursor: auto;
     }
-
+    
     
 
 

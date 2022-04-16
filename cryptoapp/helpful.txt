@@ -5,16 +5,18 @@ Kryptowaluta- https://www.coinbase.com/pl/learn/crypto-basics/what-is-cryptocurr
 NFT https://pl.wikipedia.org/wiki/Niewymienialny_token
 DEFI https://www.coinbase.com/pl/learn/crypto-basics/what-is-defi
 Airdrop, ATH https://bithub.pl/slownik/
-
+Zady I walety https://bitcoin.org.pl/zalety-i-wady-walut-cyfrowych/ , https://www.biznesradar.pl/a/89419,jakie-sa-wady-i-zalety-kryptowalut
 Linki
 Metamask - https://bithub.pl/poradniki/kompletny-przewodnik-po-metamask/
 Konto Binance - https://academy.binance.com/pl/articles/binance-beginner-s-guide
-
+konsensus https://pl.wikipedia.org/wiki/Konsensus_(blockchain)#:~:text=konsensus%20lub%20algorytm%20konsensusu%20%E2%80%93%20w,elementem%20programowym%20oprogramowania%20blockchain%20danej
 Artykuły:
+
+
 Bezpieczeństwo -  portfele,scamy, memecoiny, wyłudzanie itp.
 Trejding i inwestycje - co i jak, giełdy, staking, wachania
 DEFI - zdecentralizowane finanse
-NFT - artykuł
+NFT - artykuł   
 
 Podstawowa wiedza:
 Co to jest Kryptografia

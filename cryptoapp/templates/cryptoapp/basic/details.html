@@ -8,7 +8,7 @@
     {% if basic %}
         <h3>{{ basic.name }}</h3>
         
-        <p>{{ basic.description }}</p>
+        <p>{{ basic.description |safe}}</p>
         <p>
             <a href="{% url 'basic' %}"> Powrót</a>
         </p>

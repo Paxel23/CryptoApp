@@ -1,0 +1,34 @@
+
+html {
+    background-image: url(https://img.freepik.com/darmowe-zdjecie/3d-ilustracyjny-cyfrowy-blokowy-lancuchowy-kod-niska-wielokatna-siatka-trojkatow-swiecacych-w-sieci-niebieskich-kropek_92790-116.jpg?w=996);
+    background-size: cover;
+    background-color:rgba(255, 89, 0, 0.945)(114, 40, 40);
+    font-family: 'Arial', Sans-serif;
+    font-size: 18px;   
+
+    }
+  body {  
+    background-color: rgba(255, 255, 255, 0.774);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    width: 1300px;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    margin: auto auto;
+    
+    }
+ 
+  
+    
+  a:link{
+      color:rgb(16, 4, 48)
+      }
+      a:visited{
+          color:rgb(10, 0, 34)
+      }
+    
+    
+
+
+
