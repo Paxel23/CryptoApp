@@ -1,11 +1,12 @@
 from django.urls import path
-
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('form/', views.form, name='form'),
     path('news', views.news, name='news'), # ZMIENIANNE Z SHOW NA NEWS
+    path('show', views.show, name='show'),
     path('tutorial', views.tutorials, name='tutorial'),
     path('tutorial/<int:tutorial_id>',
          views.tutorials_szczegoly, name='tutorial_szczegoly'),
@@ -26,7 +27,10 @@ urlpatterns = [
     path('dict', views.dicts, name='dict'),
     path('dict/<int:dict_id>',
          views.dicts_szczegoly, name='dicts_szczegoly'),
+    path('main', views.main, name='main'),   
+    path('fake', views.cryptocurrencies, name='fake'),
 
          
 ]
 
+urlpatterns += staticfiles_urlpatterns()

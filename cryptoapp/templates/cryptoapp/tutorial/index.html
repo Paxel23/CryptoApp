@@ -7,14 +7,7 @@
 {% block content %}
     <h3>{{ action }}</h3>
     {% if all_tutorials %}
-        <table>
-            <thead>
-                <tr>
-                    <th>Nazwa</th>
-                   
-                </tr>
-            </thead>
-            <tbody>
+        
                 {% for tutorial in all_tutorials %}
                     <tr>
                         <td> <a href="{% url 'tutorial_szczegoly' tutorial.id %}" class="button-19">{{ tutorial.name }}</a></td>
@@ -22,10 +15,9 @@
                         
                     </tr>
                 {% endfor %}
-            </tbody>
-        </table>
+      
         <p>
-            <a href="{% url 'index' %}"> Powrót do strony głównej</a>
+            <a href="{% url 'main' %}"> Powrót do strony głównej</a>
         </p>
     {% else %}
         <p>Nie dodano żadnego tutoriala</p>

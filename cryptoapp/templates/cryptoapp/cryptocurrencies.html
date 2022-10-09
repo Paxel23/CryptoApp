@@ -1,4 +1,4 @@
-{% extends 'cryptoapp/base.html' %}
+{% extends 'cryptoapp/base3.html' %}
 
 {% block action %}
     {{ action }}
@@ -6,35 +6,36 @@
 
 {% block content %}
 <p>
-    <a href="{% url 'index' %}"> Powrót do strony głównej</a>
+    <a href="{% url 'main' %}"> Powrót do strony głównej</a>
 </p>
 <section>
-    <div class="container py-2">
+   <div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th scope="col">Nazwa</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Aktualna cena (USD)</th>
+            <th scope="col">Kapitalizacja (USD)</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for i in coingeckoapi %}
+            <tr>
         
-            <table class="table table-striped text-center table-striped table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col">Nazwa</th>
-                        <th scope="col">Symbol</th>
-                        <th scope="col">Logo</th>
-                        <th scope="col">Aktualna cena (USD)</th>
-                        <th scope="col">Kapitalizacja (USD)</th>
-                    </tr>
-                </thead>
-                <tbody id="tabelka">
-                    {% for i in coingeckoapi %}
-                    <tr>
-                        <td><h5 style="color: rgb(0, 0, 0);">{{i.name}}</h5></td>
-                        <td>{{i.symbol}}</td>
-                        <td class="text-center"><img src="{{i.image}}"></td>
-                        <td style="color:rgb(22, 11, 4);">{{i.current_price}}</td>
-                        <td style="color:rgb(4, 15, 8);">{{i.market_cap}}</td>
-                    </tr>
-                    {% endfor %}
+            <td><h5 style="color: rgb(0, 0, 0);">{{i.name}}</h5></td>
+            <td>{{i.symbol}}</td>
+            <td class="image3"><img src={{i.image}}></td>
+            <td style="color:rgb(22, 11, 4);">{{i.current_price}}</td>
+            <td style="color:rgb(4, 15, 8);">{{i.market_cap}}</td>
+        
+        
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
 
-                </tbody>
-            </table>
-        </div>
-    </div>
+</div>
 </section>
 {% endblock content %}

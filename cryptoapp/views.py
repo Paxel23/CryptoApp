@@ -1,4 +1,4 @@
-import requests
+import requests, json
 from django.shortcuts import render, get_object_or_404,redirect
 from cryptoapp.models import Blockchain,Token,Tutorial,Dict,Basic
 from .forms import BlockchainForm,TokenForm
@@ -11,6 +11,18 @@ from django.http import HttpResponse
 def index(request):
     
     return render(request, 'cryptoapp/index.html')
+
+
+
+def main(request):
+    coingeckoapi = requests.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false').json()
+    api_request = requests.get("https://min-api.cryptocompare.com/data/v2/news/?lang=EN")
+    api = json.loads(api_request.content)
+    return render(request, 'cryptoapp/main.html',{ 'api':api,'coingeckoapi':coingeckoapi})
+
+        # dodac do return request coingeckoapi:coingeckoapi
+    
+
 
 def form(request):
     return render(request, 'cryptoapp/form.html')

@@ -7,14 +7,7 @@
 {% block content %}
     <h3>{{ action }}</h3>
     {% if all_dicts %}
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                   
-                </tr>
-            </thead>
-            <tbody>
+        
                 {% for dict in all_dicts %}
                     <tr>
                     
@@ -23,10 +16,9 @@
                         
                     </tr>
                 {% endfor %}
-            </tbody>
-        </table>
+     
         <p>
-            <a href="{% url 'index' %}"> Powrót do strony głównej</a>
+            <a href="{% url 'main' %}"> Powrót do strony głównej</a>
         </p>
     {% else %}
         <p>Nie dodano żadnego słownika</p>
