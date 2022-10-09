@@ -18,6 +18,15 @@ html {
     margin: auto auto;
     
     }
+    p {  
+      text-align: justify;
+  text-justify: inter-word;
+  padding: 50px;
+  border: 1px;
+  
+      
+      }
+    
  
   h1{
     font-size: 39px;
@@ -37,7 +46,7 @@ html {
       background-color: rgb(134, 220, 226);
       margin: 10px;
       align-items: auto;
-      align-self:auto;
+      align-self:auto;  
       text-align: auto;
       margin-left: auto;
       margin-right: auto;
@@ -49,9 +58,7 @@ html {
       a:visited{
           color:rgb(10, 0, 34)
       }
-    html {
-        background-color: rgb(23, 161, 81);
-    }
+    
     
     .button-19 {
       appearance: button;
@@ -81,7 +88,7 @@ html {
       -webkit-user-select: none;
       vertical-align: middle;
       white-space: nowrap;
-      width: 100%;
+      width: 50%;
     }
     
     .button-19:after {
@@ -112,7 +119,16 @@ html {
       cursor: auto;
     }
     
-    
+    .content {
+      max-width: 576px;
+      background: white;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      padding: 2rem;
+      border-radius: 1rem;
+    }   
 
 
 
